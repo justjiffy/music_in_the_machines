@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music in the Machines - Project 1</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: sans-serif;
+			color: purple;
+		}
+	</style>
+</head>
+<body>
+	<h1>Music for Your Brain</h1>
+	<audio id="player">
+		<source src="La-traviata-opera.mp3">
+	</audio>
+	<span id="play">PLAY</span>
+	<span id="pause">PAUSE</span>
+	<span id="mute">MUTE</span>
+	<span id="unmute">UNMUTE</span>
+	<script>
+		player = document.getElementById('player');
+		
+		function setAudioControls(button) {
+			document.getElementById(button).addEventListener('click', function() {
+				switch(button) {
+					case 'play':
+						player.play()
+						break;
+					case 'pause':
+						player.pause()
+						break;
+					case 'mute':
+						player.volume = 0
+						break;
+					case 'play':
+						player.volume = 1
+						break;
+				}
+			})
+		}
+
+		setAudioControls('play');
+		setAudioControls('pause');
+		setAudioControls('mute');
+		setAudioControls('unmute');
+	</script>
+
+</body>
+</html>
