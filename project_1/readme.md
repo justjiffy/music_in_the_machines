@@ -1,7 +1,7 @@
 # Project 1 
 
 ## Step 1 - Downloading the Template
-
+- Login to your GitHub account and click here: https://github.com/login?return_to=%2Fjustjiffy%2Fmusic_in_the_machines
 - Fork the Project 1 repository, save it to the desktop
 - Open the forked project in Sublime Text
 - You should have an html file and an audio file
